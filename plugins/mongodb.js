@@ -7,6 +7,6 @@ module.exports = fp(async function (fastify, opts) {
         // the default value is false
         forceClose: true,
         
-        url: "mongodb://admin:root@mongo-f809c7a7992a771d.elb.ap-northeast-2.amazonaws.com:27017/baedal"
+        url: process.env.MONGODB_URL
       })
     })
